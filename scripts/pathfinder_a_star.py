@@ -43,7 +43,7 @@ class PathfinderAStar(Node):
     def ready_callback(self, msg):
         if (msg.data and self.grid_ready):
             self.get_logger().info('Received ready signal, making a path..')
-            
+
             # Run A*
             start = (self.start[1], self.start[2])
             goal = (self.goal[1], self.goal[2])
@@ -56,7 +56,7 @@ class PathfinderAStar(Node):
                 self.get_logger().info(f"{path}")
             else:
                 self.get_logger().warn("No path found.")
-            
+
             self.grid_ready = False
 
 #--------------------------------------------------------------------------------------------------
