@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/luka/ros2_ws/install/yolo_ros/lib/python3.12/site-packages",
+        "/home/luka/ros2_ws/install/yolo_msgs/lib/python3.12/site-packages",
+        "/home/luka/ros2_ws/install/prarob_vision/lib/python3.12/site-packages",
+        "/home/luka/ros2_ws/install/prarob_calib/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/luka/ros2_ws/install/yolo_ros/lib/python3.12/site-packages",
+        "/home/luka/ros2_ws/install/yolo_msgs/lib/python3.12/site-packages",
+        "/home/luka/ros2_ws/install/prarob_vision/lib/python3.12/site-packages",
+        "/home/luka/ros2_ws/install/prarob_calib/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

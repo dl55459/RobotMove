@@ -1,0 +1,25 @@
+{
+<<<<<<< HEAD
+    "cSpell.words": [
+        "cdst",
+        "imgmsg",
+        "imread",
+        "imshow",
+        "rclpy",
+        "Sobel",
+        "thresholded",
+        "thresholding",
+        "TOZERO",
+        "Trackbar",
+        "trackbars",
+        "vmax",
+        "vmin",
+        "xticks",
+        "yticks"
+    ]
+}
+=======
+  "ros.distro": "jazzy",
+  "cSpell.words": ["bmaric", "dynamixel", "GNUCXX", "prarob", "rclpy", "rviz", "urdf", "Wextra", "Wpedantic", "xacro"]
+}
+>>>>>>> 3b192ed (init)

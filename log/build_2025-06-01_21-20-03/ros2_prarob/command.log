@@ -1,0 +1,4 @@
+Invoking command in '/home/rob/ros2_prarob/build/ros2_prarob': /usr/bin/cmake --build /home/rob/ros2_prarob/build/ros2_prarob -- -j8 -l8
+Invoked command in '/home/rob/ros2_prarob/build/ros2_prarob' returned '0': /usr/bin/cmake --build /home/rob/ros2_prarob/build/ros2_prarob -- -j8 -l8
+Invoking command in '/home/rob/ros2_prarob/build/ros2_prarob': /usr/bin/cmake --install /home/rob/ros2_prarob/build/ros2_prarob
+Invoked command in '/home/rob/ros2_prarob/build/ros2_prarob' returned '0': /usr/bin/cmake --install /home/rob/ros2_prarob/build/ros2_prarob

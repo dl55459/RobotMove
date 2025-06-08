@@ -1,0 +1,8 @@
+<launch>
+    <arg name="image_location" default="$(find-pkg-share prarob_vision)/images/image.PNG" />
+
+    <node pkg="prarob_vision" name="detect" exec="image_process" output="screen">
+        <param name="image_file" value="$(var image_location)" />
+    </node>
+
+</launch>

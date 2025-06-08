@@ -1,0 +1,3 @@
+[console_scripts]
+image_process = prarob_vision.image_process:main
+image_view = prarob_vision.image_view:main

@@ -1,0 +1,9 @@
+source;share/prarob_vision/hook/pythonpath.ps1
+source;share/prarob_vision/hook/pythonpath.dsv
+source;share/prarob_vision/hook/pythonpath.sh
+source;share/prarob_vision/hook/ament_prefix_path.ps1
+source;share/prarob_vision/hook/ament_prefix_path.dsv
+source;share/prarob_vision/hook/ament_prefix_path.sh
+source;../../build/prarob_vision/share/prarob_vision/hook/pythonpath_develop.ps1
+source;../../build/prarob_vision/share/prarob_vision/hook/pythonpath_develop.dsv
+source;../../build/prarob_vision/share/prarob_vision/hook/pythonpath_develop.sh

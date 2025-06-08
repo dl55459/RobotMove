@@ -1,0 +1,22 @@
+[0.858s] Invoking command in '/home/rob/ros2_ws/src/prarob_vision/build/prarob_vision': PYTHONPATH=/home/rob/ros2_ws/src/prarob_vision/build/prarob_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rob/ros2_ws/src/prarob_vision/install/prarob_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rob/ros2_ws/src/prarob_vision/build/prarob_vision/build --no-deps symlink_data --force
+[1.211s] running develop
+[1.383s] running egg_info
+[1.398s] writing prarob_vision.egg-info/PKG-INFO
+[1.399s] writing dependency_links to prarob_vision.egg-info/dependency_links.txt
+[1.400s] writing entry points to prarob_vision.egg-info/entry_points.txt
+[1.400s] writing requirements to prarob_vision.egg-info/requires.txt
+[1.400s] writing top-level names to prarob_vision.egg-info/top_level.txt
+[1.433s] reading manifest file 'prarob_vision.egg-info/SOURCES.txt'
+[1.434s] writing manifest file 'prarob_vision.egg-info/SOURCES.txt'
+[1.452s] running build_ext
+[1.452s] Creating /home/rob/ros2_ws/src/prarob_vision/install/prarob_vision/lib/python3.12/site-packages/prarob-vision.egg-link (link to .)
+[1.453s] Installing image_process script to /home/rob/ros2_ws/src/prarob_vision/install/prarob_vision/lib/prarob_vision
+[1.453s] Installing image_view script to /home/rob/ros2_ws/src/prarob_vision/install/prarob_vision/lib/prarob_vision
+[1.453s] 
+[1.454s] Installed /home/rob/ros2_ws/src/prarob_vision/build/prarob_vision
+[1.454s] running symlink_data
+[1.454s] symbolically linking /home/rob/ros2_ws/src/prarob_vision/build/prarob_vision/resource/prarob_vision -> /home/rob/ros2_ws/src/prarob_vision/install/prarob_vision/share/ament_index/resource_index/packages
+[1.454s] symbolically linking /home/rob/ros2_ws/src/prarob_vision/build/prarob_vision/package.xml -> /home/rob/ros2_ws/src/prarob_vision/install/prarob_vision/share/prarob_vision
+[1.455s] symbolically linking /home/rob/ros2_ws/src/prarob_vision/build/prarob_vision/images/image.PNG -> /home/rob/ros2_ws/src/prarob_vision/install/prarob_vision/share/prarob_vision/images
+[1.455s] symbolically linking /home/rob/ros2_ws/src/prarob_vision/build/prarob_vision/launch/image_process.launch.xml -> /home/rob/ros2_ws/src/prarob_vision/install/prarob_vision/share/prarob_vision/launch
+[1.494s] Invoked command in '/home/rob/ros2_ws/src/prarob_vision/build/prarob_vision' returned '0': PYTHONPATH=/home/rob/ros2_ws/src/prarob_vision/build/prarob_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rob/ros2_ws/src/prarob_vision/install/prarob_vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rob/ros2_ws/src/prarob_vision/build/prarob_vision/build --no-deps symlink_data --force

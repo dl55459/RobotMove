@@ -1,0 +1,86 @@
+[0.062s] Invoking command in '/home/rob/ros2_prarob/build/ros2_prarob': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rob/ros2_prarob -DCMAKE_INSTALL_PREFIX=/home/rob/ros2_prarob/install/ros2_prarob
+[0.187s] -- The C compiler identification is GNU 13.3.0
+[0.298s] -- The CXX compiler identification is GNU 13.3.0
+[0.335s] -- Detecting C compiler ABI info
+[0.546s] -- Detecting C compiler ABI info - done
+[0.566s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.566s] -- Detecting C compile features
+[0.567s] -- Detecting C compile features - done
+[0.592s] -- Detecting CXX compiler ABI info
+[0.893s] -- Detecting CXX compiler ABI info - done
+[0.922s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.923s] -- Detecting CXX compile features
+[0.924s] -- Detecting CXX compile features - done
+[0.971s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.303s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.526s] -- Found robot_state_publisher: 3.3.3 (/opt/ros/jazzy/share/robot_state_publisher/cmake)
+[1.645s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.676s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.714s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.760s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.953s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.961s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.150s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.192s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.239s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.120s] -- Found xacro: 2.0.13 (/opt/ros/jazzy/share/xacro/cmake)
+[3.124s] -- Found rviz2: 14.1.11 (/opt/ros/jazzy/share/rviz2/cmake)
+[3.128s] -- Found ros2_control: 4.29.0 (/opt/ros/jazzy/share/ros2_control/cmake)
+[3.132s] -- Found ros2_controllers: 4.25.0 (/opt/ros/jazzy/share/ros2_controllers/cmake)
+[3.135s] -- Found dynamixel_hardware: 0.6.0 (/home/rob/ros/jazzy/install/dynamixel_hardware/share/dynamixel_hardware/cmake)
+[3.754s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.996s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.997s] -- Configured cppcheck include dirs: 
+[3.997s] -- Configured cppcheck exclude dirs and/or files: 
+[4.001s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.001s] -- Configured 'flake8' exclude dirs and/or files: 
+[4.009s] -- Added test 'lint_cmake' to check CMake code style
+[4.014s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.032s] -- Added test 'uncrustify' to check C / C++ code style
+[4.032s] -- Configured uncrustify additional arguments: 
+[4.036s] -- Added test 'xmllint' to check XML markup files
+[4.040s] -- Configuring done (3.9s)
+[4.056s] -- Generating done (0.0s)
+[4.061s] -- Build files have been written to: /home/rob/ros2_prarob/build/ros2_prarob
+[4.080s] Invoked command in '/home/rob/ros2_prarob/build/ros2_prarob' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rob/ros2_prarob -DCMAKE_INSTALL_PREFIX=/home/rob/ros2_prarob/install/ros2_prarob
+[4.083s] Invoking command in '/home/rob/ros2_prarob/build/ros2_prarob': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rob/ros2_prarob/build/ros2_prarob -- -j8 -l8
+[4.201s] Invoked command in '/home/rob/ros2_prarob/build/ros2_prarob' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rob/ros2_prarob/build/ros2_prarob -- -j8 -l8
+[4.224s] Invoking command in '/home/rob/ros2_prarob/build/ros2_prarob': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rob/ros2_prarob/build/ros2_prarob
+[4.243s] -- Install configuration: ""
+[4.244s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/urdf
+[4.244s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/urdf/prarob_manipulator.ros2_control.xacro
+[4.244s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/urdf/prarob_manipulator.xacro
+[4.245s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/urdf/prarob_manipulator.urdf.xacro
+[4.246s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/controllers
+[4.246s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/controllers/controllers.yaml
+[4.246s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/launch
+[4.247s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/launch/prarob_manipulator.launch.py
+[4.247s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/launch/prarob_manipulator.rviz
+[4.248s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes
+[4.249s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes/prarob_ruka1_v1.step
+[4.250s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes/base.dae
+[4.251s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes/end_effector.dae
+[4.254s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes/link_90.dae
+[4.258s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes/FINAL_SCARA_ARM.dae
+[4.335s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes/ruka2_.step
+[4.335s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes/XL-430_new.dae
+[4.343s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes/postolje_seminar_v1.step
+[4.344s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes/link_rr.dae
+[4.346s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/meshes/postolje_seminar_v1.stl
+[4.347s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/lib/ros2_prarob/move_robot.py
+[4.347s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ament_index/resource_index/package_run_dependencies/ros2_prarob
+[4.348s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ament_index/resource_index/parent_prefix_path/ros2_prarob
+[4.348s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/environment/ament_prefix_path.sh
+[4.348s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/environment/ament_prefix_path.dsv
+[4.349s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/environment/path.sh
+[4.349s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/environment/path.dsv
+[4.350s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/local_setup.bash
+[4.350s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/local_setup.sh
+[4.351s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/local_setup.zsh
+[4.351s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/local_setup.dsv
+[4.351s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/package.dsv
+[4.352s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ament_index/resource_index/packages/ros2_prarob
+[4.352s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/cmake/ros2_prarobConfig.cmake
+[4.353s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/cmake/ros2_prarobConfig-version.cmake
+[4.353s] -- Installing: /home/rob/ros2_prarob/install/ros2_prarob/share/ros2_prarob/package.xml
+[4.358s] Invoked command in '/home/rob/ros2_prarob/build/ros2_prarob' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rob/ros2_prarob/build/ros2_prarob

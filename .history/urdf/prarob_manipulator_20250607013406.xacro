@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+<xacro:macro name="prarob_manipulator" params="parent *origin">
+  <joint name="origin_to_link1" type="fixed">
+    <xacro:insert_block name="origin" />
+    <parent link="${parent}" />
+    <child link="link1" />
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <axis xyz="0 0 1" />
+  </joint>
+
+  <!-- Link 1 - primitives-->
+  <!--link name="link1">
+    <visual>
+      <origin xyz="0 0 0.5" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 1.0"/>
+      </geometry>
+      <color rgba="0 0 0.8 1"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 1.0"/>
+      </geometry>
+    </collision>
+  </link-->
+
+<!-- Link 1 - stl -->
+  <link name="link1">
+    <visual>
+      <origin rpy="1.5708 0 -1.5708" xyz="0.0495 0 0"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/base.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="1.5708 0 -1.5708" xyz="0.0495 0 0"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/base.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+
+  </link>
+
+  <!-- Joint 1 fixed -->
+  <joint name="Brotfixed" type="fixed">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0.0 0.0 0.019" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit velocity="10.0" effort="1" lower="-2.82743338823" upper="2.82743338823" />
+  </joint>
+
+  <!-- Link 2 -->
+  <link name="link2">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.1416 0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/XL-430_new.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="3.1416 0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/XL-430_new.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint 1 -->
+  <joint name="Brot" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0.0 0.0 0.022" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit velocity="10.0" effort="1" lower="-1.5708" upper="1.5708" />
+  </joint>
+
+  <!-- Link 3 -->
+  <link name="link3">
+    <visual>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/link_90.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/link_90.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint 2 fixed -->
+  <joint name="pitchfixed" type="fixed">
+    <parent link="link3"/>
+    <child link="link4"/>
+    <origin xyz="0.012 0.0 0.01725" rpy="1.5708 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit velocity="10.0" effort="1" lower="-2.82743338823" upper="2.82743338823" />
+  </joint>
+
+  <!-- link4 -->
+  <link name="link4">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/XL-430_new.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/XL-430_new.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint 2 -->
+  <joint name="pitch" type="revolute">
+    <parent link="link4"/>
+    <child link="link5"/>
+    <origin xyz="0.0 0.0 -0.028" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit velocity="10.0" effort="1" lower="-0.1" upper="1.5708" />
+  </joint>
+
+  <!-- Link 5 -->
+  <link name="link5">
+    <visual>
+      <origin xyz="0.084 0 0" rpy="1.5708 0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/link_rr.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0.084 0 0" rpy="1.5708 0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/link_rr.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint 3 fixed -->
+  <joint name="EErotfixed" type="fixed">
+    <parent link="link5"/>
+    <child link="link6"/>
+    <origin xyz="0.178 0 0.0279" rpy="1.5708 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit velocity="10.0" effort="1" lower="-2.82743338823" upper="2.82743338823" />
+  </joint>
+
+  <!-- link 6 -->
+  <link name="link6">
+    <visual>
+      <origin xyz="0.0 0 0" rpy="0 0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/XL-430_new.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/XL-430_new.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint 3 -->
+  <joint name="joint3" type="revolute">
+    <parent link="link6"/>
+    <child link="link7"/>
+    <origin xyz="0.0 0.0 0.027" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit velocity="10.0" effort="1" lower="-2.82743338823" upper="2.82743338823" />
+  </joint>
+
+  <!-- Link 7 -->
+  <link name="link7">
+    <visual>
+      <origin xyz="0.094 0 0" rpy="-1.5708 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/end_effector.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <origin xyz="0.094 0 0" rpy="-1.5708 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://ros2_prarob/meshes/end_effector.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+</xacro:macro>
+</robot>
