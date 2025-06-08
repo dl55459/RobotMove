@@ -3,7 +3,6 @@ from rclpy.node import Node
 from std_msgs.msg import String, Float64
 from std_msgs.msg import Float64MultiArray
 from geometry_msgs.msg import Point
-from my_robot_msgs.msg import JointAngles  # Dodano za slanje JointAngles
 
 import ast  # Za parsanje string liste
 
@@ -21,11 +20,11 @@ class ModeSelector(Node):
             10
         )
 
-        self.start_pub = self.create_publisher(String, '/path/start', 10)
-        self.end_pub = self.create_publisher(String, '/path/end', 10)
+        self.start_pub = self.create_publisher(String, '/pathfinder/start_point', 10)
+        self.end_pub = self.create_publisher(String, '/pathfinder/goal_point', 10)
         self.mode_pub = self.create_publisher(String, '/selected_mode', 10)
         self.xy_pub = self.create_publisher(Point, '/manual/xy', 10)
-        self.joint_angle_pub = self.create_publisher(JointAngles, '/manual_angles', 10)  # Novi publisher
+        self.joint_angle_pub = self.create_publisher(Point, '/manual/angles', 10)  # Novi publisher
 
         self.timer = self.create_timer(2.0, self.run_interface)
 
@@ -79,10 +78,7 @@ class ModeSelector(Node):
                 kut = float(input(f"Unesi kut {i} (stupnjevi): "))
                 kutovi.append(kut)
             # Slanje samo kao JointAngles
-            joint_msg = JointAngles()
-            joint_msg.phi = kutovi[0]
-            joint_msg.alpha = kutovi[1]
-            joint_msg.theta = kutovi[2]
+            joint_msg = Point(phi = kutovi[0], alpha = kutovi[1], theta = kutovi[2])
             self.joint_angle_pub.publish(joint_msg)
             print(f"Kutevi poslani kao JointAngles na /manual_angles: phi={kutovi[0]}, alpha={kutovi[1]}, theta={kutovi[2]}")
         elif opcija == "xy":

@@ -18,7 +18,6 @@ from std_msgs.msg import Bool
 from nav_msgs.msg import Path
 from geometry_msgs.msg import PoseStamped
 from geometry_msgs.msg import Point
-from my_robot_msgs.msg import JointAngles
 
     # xi(xi-1)
     # yi(yi-1)
@@ -198,7 +197,7 @@ class prarobClientNode(Node):
         self.robot_goal_publisher_ = self.create_publisher(JointTrajectory, '/joint_trajectory_controller/joint_trajectory', 10)
         self.ready_pub = self.create_publisher(Bool, '/pathfinder/ready', 10)
         self.auto_sub = self.create_subscription(Path, '/pathfinder/path', self.autoMove, 10)
-        self.manualAngles_sub = self.create_subscription(JointAngles, '/manual_angles', self.manualMoveAngles, 10)
+        self.manualAngles_sub = self.create_subscription(Point, '/manual/angles', self.manualMoveAngles, 10)
         self.manualPoints_sub = self.create_subscription(Point, '/manual/xy', self.manualMovePoints, 10)
 # -----------------------------------------------------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------------------------------------------------
@@ -290,6 +289,8 @@ class prarobClientNode(Node):
         goal_trajectory.points.append(goal_point)
 
         return self.robot_goal_publisher_.publish(goal_trajectory)
+# -----------------------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------------------
 
 def main(args=None):
     rclpy.init(args=args)
